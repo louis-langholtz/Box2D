@@ -660,7 +660,7 @@ b2EPAxis b2EPCollider::ComputePolygonSeparation() const
 	b2EPAxis axis;
 	axis.type = b2EPAxis::e_unknown;
 	axis.index = -1;
-	axis.separation = b2_lowestFloat;
+	axis.separation = -b2_maxFloat;
 
 	const auto perp = b2Vec2(-m_normal.y, m_normal.x);
 
