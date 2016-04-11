@@ -57,7 +57,7 @@ constexpr auto b2_maxPolygonVertices = int32{8};
 /// This is used to fatten AABBs in the dynamic tree. This allows proxies
 /// to move by a small amount without triggering a tree adjustment.
 /// This is in meters.
-constexpr auto b2_aabbExtension = float32{0.1f};
+constexpr auto b2_aabbExtension = float32{0.001f}; // float32{0.1f};
 
 /// This is used to fatten AABBs in the dynamic tree. This is used to predict
 /// the future position based on the current displacement.
@@ -66,7 +66,7 @@ constexpr auto b2_aabbMultiplier = float32{2.0f};
 
 /// A small length used as a collision and constraint tolerance. Usually it is
 /// chosen to be numerically significant, but visually insignificant.
-constexpr auto b2_linearSlop = float32{0.005f};
+constexpr auto b2_linearSlop = float32{0.00005f}; // float32{0.005f};
 
 /// A small angle used as a collision and constraint tolerance. Usually it is
 /// chosen to be numerically significant, but visually insignificant.
