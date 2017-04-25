@@ -24,7 +24,7 @@
    <div id="projectname">Box2D
    &#160;<span id="projectnumber">3.0.0</span>
    </div>
-   <div id="projectbrief">A 2D, Real-Time Oriented, Physics Engine</div>
+   <div id="projectbrief">A Real-Time-Oriented 2-D Physics Engine</div>
   </td>
  </tr>
  </tbody>
@@ -72,6 +72,9 @@ $(function() {
 <div class="title">MassData.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Declaration of the MassData structure and associated free functions.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="_math_8hpp_source.html">Box2D/Common/Math.hpp</a>&gt;</code><br />
 </div>
 <p><a href="_mass_data_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -97,17 +100,24 @@ Functions</h2></td></tr>
 <tr class="memdesc:a83f47dbc3595f6f20603a75343792fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the polar moment of the area enclosed by the given vertices.  <a href="namespacebox2d.html#a83f47dbc3595f6f20603a75343792fe5">More...</a><br /></td></tr>
 <tr class="separator:a83f47dbc3595f6f20603a75343792fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc6fa6580431441aab54010a5fc13feb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#abc6fa6580431441aab54010a5fc13feb">box2d::GetMassData</a> (const <a class="el" href="namespacebox2d.html#a2db8d826b2df50a89a463c736cbab7c4">Length</a> r, const <a class="el" href="namespacebox2d.html#a8603adde64b1dd7baebb0d5ccc33bb6c">Density</a> density, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> location)</td></tr>
+<tr class="memdesc:abc6fa6580431441aab54010a5fc13feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mass data for a circular shape.  <a href="namespacebox2d.html#abc6fa6580431441aab54010a5fc13feb">More...</a><br /></td></tr>
 <tr class="separator:abc6fa6580431441aab54010a5fc13feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc41c6662fe76b05cd79783b84287677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#adc41c6662fe76b05cd79783b84287677">box2d::GetMassData</a> (const <a class="el" href="namespacebox2d.html#a2db8d826b2df50a89a463c736cbab7c4">Length</a> r, const <a class="el" href="namespacebox2d.html#a8603adde64b1dd7baebb0d5ccc33bb6c">Density</a> density, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> v0, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> v1)</td></tr>
+<tr class="memdesc:adc41c6662fe76b05cd79783b84287677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mass data for a linear shape.  <a href="namespacebox2d.html#adc41c6662fe76b05cd79783b84287677">More...</a><br /></td></tr>
 <tr class="separator:adc41c6662fe76b05cd79783b84287677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63d015af6fe506fb0373823639e3aec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#ae63d015af6fe506fb0373823639e3aec">box2d::GetMassData</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f)</td></tr>
 <tr class="memdesc:ae63d015af6fe506fb0373823639e3aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mass data for the given fixture.  <a href="namespacebox2d.html#ae63d015af6fe506fb0373823639e3aec">More...</a><br /></td></tr>
 <tr class="separator:ae63d015af6fe506fb0373823639e3aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b7eedc78462296d2ad47914759dce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a94b7eedc78462296d2ad47914759dce4">box2d::ComputeMassData</a> (const <a class="el" href="classbox2d_1_1_body.html">Body</a> &amp;body) noexcept</td></tr>
+<tr class="memdesc:a94b7eedc78462296d2ad47914759dce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the body's mass data.  <a href="namespacebox2d.html#a94b7eedc78462296d2ad47914759dce4">More...</a><br /></td></tr>
+<tr class="separator:a94b7eedc78462296d2ad47914759dce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Declaration of the MassData structure and associated free functions. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 24 2017 18:10:13 for Box2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 24 2017 23:00:17 for Box2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

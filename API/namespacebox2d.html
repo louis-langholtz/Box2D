@@ -24,7 +24,7 @@
    <div id="projectname">Box2D
    &#160;<span id="projectnumber">3.0.0</span>
    </div>
-   <div id="projectbrief">A 2D, Real-Time Oriented, Physics Engine</div>
+   <div id="projectbrief">A Real-Time-Oriented 2-D Physics Engine</div>
   </td>
  </tr>
  </tbody>
@@ -160,7 +160,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edge shape.  <a href="classbox2d_1_1_edge_shape.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbox2d_1_1_filter.html">Filter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This holds contact filtering data.  <a href="structbox2d_1_1_filter.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A holder for contact filtering data.  <a href="structbox2d_1_1_filter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbox2d_1_1_fixed.html">Fixed</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbox2d_1_1_fixed.html" title="Fixed. ">Fixed</a>.  <a href="classbox2d_1_1_fixed.html#details">More...</a><br /></td></tr>
@@ -588,6 +588,9 @@ Functions</h2></td></tr>
 <tr class="separator:a6b227189a56d228f75247380efe06058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a568f18296596767baa046c2d33c794e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbox2d_1_1_a_a_b_b.html">AABB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a568f18296596767baa046c2d33c794e7">ComputeAABB</a> (const <a class="el" href="classbox2d_1_1_body.html">Body</a> &amp;body)</td></tr>
 <tr class="separator:a568f18296596767baa046c2d33c794e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab833e1e1123502151980e1b6a4176617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbox2d_1_1_a_a_b_b.html">AABB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#ab833e1e1123502151980e1b6a4176617">GetAABB</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;fixture, <a class="el" href="namespacebox2d.html#a057eaee20725423152e01260eb2f212e">child_count_t</a> childIndex) noexcept</td></tr>
+<tr class="memdesc:ab833e1e1123502151980e1b6a4176617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fixture's <a class="el" href="classbox2d_1_1_a_a_b_b.html" title="Axis Aligned Bounding Box. ">AABB</a>.  <a href="#ab833e1e1123502151980e1b6a4176617">More...</a><br /></td></tr>
+<tr class="separator:ab833e1e1123502151980e1b6a4176617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea7659b10c20199e6559e9f498ebb6b8"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#aea7659b10c20199e6559e9f498ebb6b8">operator==</a> (<a class="el" href="structbox2d_1_1_proxy_id_pair.html">ProxyIdPair</a> lhs, <a class="el" href="structbox2d_1_1_proxy_id_pair.html">ProxyIdPair</a> rhs)</td></tr>
 <tr class="separator:aea7659b10c20199e6559e9f498ebb6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c65475a2319741cdb565fc7f5c215c5"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a6c65475a2319741cdb565fc7f5c215c5">operator!=</a> (<a class="el" href="structbox2d_1_1_proxy_id_pair.html">ProxyIdPair</a> lhs, <a class="el" href="structbox2d_1_1_proxy_id_pair.html">ProxyIdPair</a> rhs)</td></tr>
@@ -661,12 +664,17 @@ Functions</h2></td></tr>
 <tr class="memdesc:a83f47dbc3595f6f20603a75343792fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the polar moment of the area enclosed by the given vertices.  <a href="#a83f47dbc3595f6f20603a75343792fe5">More...</a><br /></td></tr>
 <tr class="separator:a83f47dbc3595f6f20603a75343792fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc6fa6580431441aab54010a5fc13feb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#abc6fa6580431441aab54010a5fc13feb">GetMassData</a> (const <a class="el" href="namespacebox2d.html#a2db8d826b2df50a89a463c736cbab7c4">Length</a> r, const <a class="el" href="namespacebox2d.html#a8603adde64b1dd7baebb0d5ccc33bb6c">Density</a> density, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> location)</td></tr>
+<tr class="memdesc:abc6fa6580431441aab54010a5fc13feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mass data for a circular shape.  <a href="#abc6fa6580431441aab54010a5fc13feb">More...</a><br /></td></tr>
 <tr class="separator:abc6fa6580431441aab54010a5fc13feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc41c6662fe76b05cd79783b84287677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#adc41c6662fe76b05cd79783b84287677">GetMassData</a> (const <a class="el" href="namespacebox2d.html#a2db8d826b2df50a89a463c736cbab7c4">Length</a> r, const <a class="el" href="namespacebox2d.html#a8603adde64b1dd7baebb0d5ccc33bb6c">Density</a> density, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> v0, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> v1)</td></tr>
+<tr class="memdesc:adc41c6662fe76b05cd79783b84287677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mass data for a linear shape.  <a href="#adc41c6662fe76b05cd79783b84287677">More...</a><br /></td></tr>
 <tr class="separator:adc41c6662fe76b05cd79783b84287677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63d015af6fe506fb0373823639e3aec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#ae63d015af6fe506fb0373823639e3aec">GetMassData</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f)</td></tr>
 <tr class="memdesc:ae63d015af6fe506fb0373823639e3aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mass data for the given fixture.  <a href="#ae63d015af6fe506fb0373823639e3aec">More...</a><br /></td></tr>
 <tr class="separator:ae63d015af6fe506fb0373823639e3aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b7eedc78462296d2ad47914759dce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a94b7eedc78462296d2ad47914759dce4">ComputeMassData</a> (const <a class="el" href="classbox2d_1_1_body.html">Body</a> &amp;body) noexcept</td></tr>
+<tr class="memdesc:a94b7eedc78462296d2ad47914759dce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the body's mass data.  <a href="#a94b7eedc78462296d2ad47914759dce4">More...</a><br /></td></tr>
+<tr class="separator:a94b7eedc78462296d2ad47914759dce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4528664a1397cc1e23d1090d53775511"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_ray_cast_output.html">RayCastOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a4528664a1397cc1e23d1090d53775511">RayCast</a> (const <a class="el" href="classbox2d_1_1_a_a_b_b.html">AABB</a> &amp;aabb, const <a class="el" href="structbox2d_1_1_ray_cast_input.html">RayCastInput</a> &amp;input)</td></tr>
 <tr class="separator:a4528664a1397cc1e23d1090d53775511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34daaf5cd518d08985a1f9beb1c500be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_ray_cast_output.html">RayCastOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a34daaf5cd518d08985a1f9beb1c500be">RayCast</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f, const <a class="el" href="structbox2d_1_1_ray_cast_input.html">RayCastInput</a> &amp;input, <a class="el" href="namespacebox2d.html#a057eaee20725423152e01260eb2f212e">child_count_t</a> childIndex)</td></tr>
@@ -1367,9 +1375,6 @@ Functions</h2></td></tr>
 <tr class="separator:a9e057f7e3d965c20031c1386f71b0986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af54233e9238433f0639fd47ec691fdbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebox2d.html#a210d78630222e03add47d7ffa5086609">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#af54233e9238433f0639fd47ec691fdbe">GetFixtureCount</a> (const <a class="el" href="classbox2d_1_1_body.html">Body</a> &amp;body)</td></tr>
 <tr class="separator:af54233e9238433f0639fd47ec691fdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94b7eedc78462296d2ad47914759dce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a94b7eedc78462296d2ad47914759dce4">ComputeMassData</a> (const <a class="el" href="classbox2d_1_1_body.html">Body</a> &amp;body) noexcept</td></tr>
-<tr class="memdesc:a94b7eedc78462296d2ad47914759dce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the body's mass data.  <a href="#a94b7eedc78462296d2ad47914759dce4">More...</a><br /></td></tr>
-<tr class="separator:a94b7eedc78462296d2ad47914759dce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af021173a2c5333f9754b28768d5bc123"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#af021173a2c5333f9754b28768d5bc123">RotateAboutWorldPoint</a> (<a class="el" href="classbox2d_1_1_body.html">Body</a> &amp;body, <a class="el" href="namespacebox2d.html#a73c7a583a8abd1859184b6d35fdc62b6">Angle</a> amount, <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> worldPoint)</td></tr>
 <tr class="memdesc:af021173a2c5333f9754b28768d5bc123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates a body a given amount around a point in world coordinates.  <a href="#af021173a2c5333f9754b28768d5bc123">More...</a><br /></td></tr>
 <tr class="separator:af021173a2c5333f9754b28768d5bc123"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1457,13 +1462,11 @@ Functions</h2></td></tr>
 <tr class="separator:acccc62952230cf35ded500222d78e3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab904e6be1b5a28ed233338f59dc78eef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#ab904e6be1b5a28ed233338f59dc78eef">SetTangentImpulses</a> (<a class="el" href="classbox2d_1_1_velocity_constraint.html">VelocityConstraint</a> &amp;vc, const <a class="el" href="namespacebox2d.html#a1aa65e68a55b216cea45e155836534f5">Momentum2D</a> impulses)</td></tr>
 <tr class="separator:ab904e6be1b5a28ed233338f59dc78eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab833e1e1123502151980e1b6a4176617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbox2d_1_1_a_a_b_b.html">AABB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#ab833e1e1123502151980e1b6a4176617">GetAABB</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;fixture, <a class="el" href="namespacebox2d.html#a057eaee20725423152e01260eb2f212e">child_count_t</a> childIndex) noexcept</td></tr>
-<tr class="memdesc:ab833e1e1123502151980e1b6a4176617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fixture's <a class="el" href="classbox2d_1_1_a_a_b_b.html" title="Axis Aligned Bounding Box. ">AABB</a>.  <a href="#ab833e1e1123502151980e1b6a4176617">More...</a><br /></td></tr>
-<tr class="separator:ab833e1e1123502151980e1b6a4176617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c4c9fd5f5a76e235c7e2014c7a6069"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#ac3c4c9fd5f5a76e235c7e2014c7a6069">TestPoint</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> p)</td></tr>
-<tr class="memdesc:ac3c4c9fd5f5a76e235c7e2014c7a6069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a point for containment in a fixture.  <a href="#ac3c4c9fd5f5a76e235c7e2014c7a6069">More...</a><br /></td></tr>
-<tr class="separator:ac3c4c9fd5f5a76e235c7e2014c7a6069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4c6ca988362300b5bca743d8405030"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a8b4c6ca988362300b5bca743d8405030">TestPoint</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> p) noexcept</td></tr>
+<tr class="memdesc:a8b4c6ca988362300b5bca743d8405030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a point for containment in a fixture.  <a href="#a8b4c6ca988362300b5bca743d8405030">More...</a><br /></td></tr>
+<tr class="separator:a8b4c6ca988362300b5bca743d8405030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b0801918da383fc4fa2f8e910bfd53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a58b0801918da383fc4fa2f8e910bfd53">SetAwake</a> (<a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f) noexcept</td></tr>
+<tr class="memdesc:a58b0801918da383fc4fa2f8e910bfd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the associated body's sleep status to awake.  <a href="#a58b0801918da383fc4fa2f8e910bfd53">More...</a><br /></td></tr>
 <tr class="separator:a58b0801918da383fc4fa2f8e910bfd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e76636c6189cc9d64b7c3cf0fd33a88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_transformation.html">Transformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a7e76636c6189cc9d64b7c3cf0fd33a88">GetTransformation</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f) noexcept</td></tr>
 <tr class="memdesc:a7e76636c6189cc9d64b7c3cf0fd33a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transformation associated with the given fixture.  <a href="#a7e76636c6189cc9d64b7c3cf0fd33a88">More...</a><br /></td></tr>
@@ -6379,6 +6382,16 @@ SetMassData. </dd></dl>
       </table>
 </div><div class="memdoc">
 
+<p>Computes the mass data for a circular shape. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Radius of the circlular shape. </td></tr>
+    <tr><td class="paramname">density</td><td>Areal density of mass. </td></tr>
+    <tr><td class="paramname">location</td><td>Location of the center of the shape. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="adc41c6662fe76b05cd79783b84287677"></a>
@@ -6418,6 +6431,17 @@ SetMassData. </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Computes the mass data for a linear shape. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Radius of the vertices of the linear shape. </td></tr>
+    <tr><td class="paramname">density</td><td>Areal density of mass. </td></tr>
+    <tr><td class="paramname">v0</td><td>Location of vertex zero. </td></tr>
+    <tr><td class="paramname">v1</td><td>Location of vertex one. </td></tr>
+  </table>
+  </dd>
+</dl>
 <p>Use the fixture's areal mass density times the shape's second moment of area to derive I. </p><dl class="section see"><dt>See also</dt><dd><a href="https://en.wikipedia.org/wiki/Second_moment_of_area">https://en.wikipedia.org/wiki/Second_moment_of_area</a> </dd></dl>
 
 </div>
@@ -6439,7 +6463,13 @@ SetMassData. </dd></dl>
 </div><div class="memdoc">
 
 <p>Computes the mass data for the given fixture. </p>
-<p>The mass data is based on the density and the shape of the fixture. The rotational inertia is about the shape's origin. This operation may be expensive. </p>
+<p>The mass data is based on the density and the shape of the fixture. The rotational inertia is about the shape's origin. </p><dl class="section note"><dt>Note</dt><dd>This operation may be expensive.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td><a class="el" href="classbox2d_1_1_fixture.html" title="Fixture. ">Fixture</a> to compute the mass data for. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -7077,7 +7107,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Gets the polar moment of the area enclosed by the given vertices. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Behavior is undefined if given collection has less than 3 vertices. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Behavior is undefined if given collection has less than 3 vertices.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vertices</td><td>Collection of three or more vertices. </td></tr>
@@ -13780,6 +13810,15 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the associated body's sleep status to awake. </p>
+<dl class="section note"><dt>Note</dt><dd>This is a convenience function that simply looks up the fixture's body and calls that body' SetAwake method. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td><a class="el" href="classbox2d_1_1_fixture.html" title="Fixture. ">Fixture</a> whose body should be awoken. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a667dabf21441f2cdfd028f3f7751d55a"></a>
@@ -14736,11 +14775,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac3c4c9fd5f5a76e235c7e2014c7a6069"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3c4c9fd5f5a76e235c7e2014c7a6069">&#9670;&nbsp;</a></span>TestPoint()</h2>
+<a id="a8b4c6ca988362300b5bca743d8405030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4c6ca988362300b5bca743d8405030">&#9670;&nbsp;</a></span>TestPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool box2d::TestPoint </td>
@@ -14760,6 +14802,11 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Test a point for containment in a fixture. </p>
@@ -15749,7 +15796,7 @@ For a 2-D linear position of the origin (0, 0), the result is simply the transla
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 24 2017 18:10:13 for Box2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 24 2017 23:00:17 for Box2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

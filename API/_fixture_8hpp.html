@@ -24,7 +24,7 @@
    <div id="projectname">Box2D
    &#160;<span id="projectnumber">3.0.0</span>
    </div>
-   <div id="projectbrief">A 2D, Real-Time Oriented, Physics Engine</div>
+   <div id="projectbrief">A Real-Time-Oriented 2-D Physics Engine</div>
   </td>
  </tr>
  </tbody>
@@ -72,6 +72,9 @@ $(function() {
 <div class="title">Fixture.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Declarations of the Filter, FixtureDef, and Fixture classes, and free functions associated with them.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;<a class="el" href="_math_8hpp_source.html">Box2D/Common/Math.hpp</a>&gt;</code><br />
@@ -82,7 +85,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbox2d_1_1_filter.html">box2d::Filter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This holds contact filtering data.  <a href="structbox2d_1_1_filter.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A holder for contact filtering data.  <a href="structbox2d_1_1_filter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbox2d_1_1_fixture_def.html">box2d::FixtureDef</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbox2d_1_1_fixture.html" title="Fixture. ">Fixture</a> definition.  <a href="structbox2d_1_1_fixture_def.html#details">More...</a><br /></td></tr>
@@ -98,22 +101,22 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab833e1e1123502151980e1b6a4176617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbox2d_1_1_a_a_b_b.html">AABB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#ab833e1e1123502151980e1b6a4176617">box2d::GetAABB</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;fixture, <a class="el" href="namespacebox2d.html#a057eaee20725423152e01260eb2f212e">child_count_t</a> childIndex) noexcept</td></tr>
-<tr class="memdesc:ab833e1e1123502151980e1b6a4176617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fixture's <a class="el" href="classbox2d_1_1_a_a_b_b.html" title="Axis Aligned Bounding Box. ">AABB</a>.  <a href="namespacebox2d.html#ab833e1e1123502151980e1b6a4176617">More...</a><br /></td></tr>
-<tr class="separator:ab833e1e1123502151980e1b6a4176617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c4c9fd5f5a76e235c7e2014c7a6069"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#ac3c4c9fd5f5a76e235c7e2014c7a6069">box2d::TestPoint</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> p)</td></tr>
-<tr class="memdesc:ac3c4c9fd5f5a76e235c7e2014c7a6069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a point for containment in a fixture.  <a href="namespacebox2d.html#ac3c4c9fd5f5a76e235c7e2014c7a6069">More...</a><br /></td></tr>
-<tr class="separator:ac3c4c9fd5f5a76e235c7e2014c7a6069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4c6ca988362300b5bca743d8405030"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a8b4c6ca988362300b5bca743d8405030">box2d::TestPoint</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f, const <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> p) noexcept</td></tr>
+<tr class="memdesc:a8b4c6ca988362300b5bca743d8405030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a point for containment in a fixture.  <a href="namespacebox2d.html#a8b4c6ca988362300b5bca743d8405030">More...</a><br /></td></tr>
+<tr class="separator:a8b4c6ca988362300b5bca743d8405030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b0801918da383fc4fa2f8e910bfd53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a58b0801918da383fc4fa2f8e910bfd53">box2d::SetAwake</a> (<a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f) noexcept</td></tr>
+<tr class="memdesc:a58b0801918da383fc4fa2f8e910bfd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the associated body's sleep status to awake.  <a href="namespacebox2d.html#a58b0801918da383fc4fa2f8e910bfd53">More...</a><br /></td></tr>
 <tr class="separator:a58b0801918da383fc4fa2f8e910bfd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e76636c6189cc9d64b7c3cf0fd33a88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_transformation.html">Transformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a7e76636c6189cc9d64b7c3cf0fd33a88">box2d::GetTransformation</a> (const <a class="el" href="classbox2d_1_1_fixture.html">Fixture</a> &amp;f) noexcept</td></tr>
 <tr class="memdesc:a7e76636c6189cc9d64b7c3cf0fd33a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transformation associated with the given fixture.  <a href="namespacebox2d.html#a7e76636c6189cc9d64b7c3cf0fd33a88">More...</a><br /></td></tr>
 <tr class="separator:a7e76636c6189cc9d64b7c3cf0fd33a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Declarations of the Filter, FixtureDef, and Fixture classes, and free functions associated with them. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 24 2017 18:10:13 for Box2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 24 2017 23:00:17 for Box2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

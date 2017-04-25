@@ -24,7 +24,7 @@
    <div id="projectname">Box2D
    &#160;<span id="projectnumber">3.0.0</span>
    </div>
-   <div id="projectbrief">A 2D, Real-Time Oriented, Physics Engine</div>
+   <div id="projectbrief">A Real-Time-Oriented 2-D Physics Engine</div>
   </td>
  </tr>
  </tbody>
@@ -72,6 +72,9 @@ $(function() {
 <div class="title">Body.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Declarations of the Body and BodyDef classes, and free functions associated with them.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="_math_8hpp_source.html">Box2D/Common/Math.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_mass_data_8hpp_source.html">Box2D/Collision/MassData.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_body_type_8hpp_source.html">Box2D/Dynamics/BodyType.hpp</a>&gt;</code><br />
@@ -192,9 +195,6 @@ Functions</h2></td></tr>
 <tr class="separator:a9e057f7e3d965c20031c1386f71b0986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af54233e9238433f0639fd47ec691fdbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebox2d.html#a210d78630222e03add47d7ffa5086609">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#af54233e9238433f0639fd47ec691fdbe">box2d::GetFixtureCount</a> (const <a class="el" href="classbox2d_1_1_body.html">Body</a> &amp;body)</td></tr>
 <tr class="separator:af54233e9238433f0639fd47ec691fdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94b7eedc78462296d2ad47914759dce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbox2d_1_1_mass_data.html">MassData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#a94b7eedc78462296d2ad47914759dce4">box2d::ComputeMassData</a> (const <a class="el" href="classbox2d_1_1_body.html">Body</a> &amp;body) noexcept</td></tr>
-<tr class="memdesc:a94b7eedc78462296d2ad47914759dce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the body's mass data.  <a href="namespacebox2d.html#a94b7eedc78462296d2ad47914759dce4">More...</a><br /></td></tr>
-<tr class="separator:a94b7eedc78462296d2ad47914759dce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af021173a2c5333f9754b28768d5bc123"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebox2d.html#af021173a2c5333f9754b28768d5bc123">box2d::RotateAboutWorldPoint</a> (<a class="el" href="classbox2d_1_1_body.html">Body</a> &amp;body, <a class="el" href="namespacebox2d.html#a73c7a583a8abd1859184b6d35fdc62b6">Angle</a> amount, <a class="el" href="namespacebox2d.html#a9d36d4b5ab54fc181487751e3574b984">Length2D</a> worldPoint)</td></tr>
 <tr class="memdesc:af021173a2c5333f9754b28768d5bc123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates a body a given amount around a point in world coordinates.  <a href="namespacebox2d.html#af021173a2c5333f9754b28768d5bc123">More...</a><br /></td></tr>
 <tr class="separator:af021173a2c5333f9754b28768d5bc123"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,10 +202,12 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1b62daab15187720d0ebe7539b0a58a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates a body a given amount around a point in body local coordinates.  <a href="namespacebox2d.html#a1b62daab15187720d0ebe7539b0a58a1">More...</a><br /></td></tr>
 <tr class="separator:a1b62daab15187720d0ebe7539b0a58a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Declarations of the Body and BodyDef classes, and free functions associated with them. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 24 2017 18:10:13 for Box2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 24 2017 23:00:17 for Box2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
