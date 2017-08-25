@@ -1,3 +1,7 @@
+## Note
+
+For new developments, please see [PlayRho](https://github.com/louis-langholtz/PlayRho). Work on my fork of Box2D has fully moved over now to this new project. Thanks!
+
 ## About
 
 This is a fork by [Louis Langholtz](https://github.com/louis-langholtz)
